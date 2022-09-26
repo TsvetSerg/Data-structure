@@ -1,4 +1,3 @@
-
 <div class="w-50 mx-auto">
   <div  class="card text-center">
   <div class="card-header">
@@ -7,7 +6,7 @@
   <div class="card-body">
     <h1>Welcome</h1>
     <p>With supporting text below as a natural lead-in to additional content.</p>
-    <button class="btn btn-primary w-25" type="submit" (click)="getLog()">See transaction</button>
+    <button class="btn btn-primary w-25" type="submit">See transaction</button>
   </div>
   <div class="card-footer text-muted">
     You have {{ total }} transaction
@@ -17,26 +16,40 @@
   <div class="row">
     <div class="col-sm-6 mt-2">
       <div class="card">
-        <app-card></app-card>
+        <div class="card-body clearfix">
+          <h5 class="card-title">{{ income }}</h5>
+          <p class="card-text">Income</p>
+          <a href="#" class="btn btn-primary w-50 float-right">See all</a>
+        </div>
       </div>
     </div>
     <div class="col-sm-6 mt-2">
       <div class="card">
-        <app-card></app-card>
+        <div class="card-body clearfix">
+          <h5 class="card-title">{{ investment }}</h5>
+          <p class="card-text">investment</p>
+          <a href="#" class="btn btn-primary w-50 float-right">See all</a>
+        </div>
       </div>
     </div>
     <div class="col-sm-6 mt-2">
       <div class="card">
-        <app-card></app-card>
+        <div class="card-body clearfix">
+          <h5 class="card-title">{{ outcome }}</h5>
+          <p class="card-text">outcome</p>
+          <a href="#" class="btn btn-primary w-50 float-right">See all</a>
+        </div>
       </div>
     </div>
     <div class="col-sm-6 mt-2">
       <div class="card">
-        <app-card></app-card>
+        <div class="card-body clearfix">
+          <h5 class="card-title">{{ loan }}</h5>
+          <p class="card-text">loan</p>
+          <a href="#" class="btn btn-primary w-50 float-right">See all</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- <app-card></app-card> -->
