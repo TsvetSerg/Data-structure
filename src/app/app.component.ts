@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { data } from '../array'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'date-structure';
+  total = data.total
+
+  getLog() {
+    console.log(data)
+  }
 }

@@ -7,10 +7,10 @@
   <div class="card-body">
     <h1>Welcome</h1>
     <p>With supporting text below as a natural lead-in to additional content.</p>
-    <button class="btn btn-primary w-25" type="submit">See transaction</button>
+    <button class="btn btn-primary w-25" type="submit" (click)="getLog()">See transaction</button>
   </div>
   <div class="card-footer text-muted">
-    You have 100 transaction
+    You have {{ total }} transaction
   </div>
   </div>
 
