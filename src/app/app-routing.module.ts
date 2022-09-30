@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ListComponent } from './list/list.component';
 
-const routes: Routes = [
-  {path: ' ', component: AppComponent},
-  {path: 'nav', component: ListComponent}
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
